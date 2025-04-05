@@ -1,13 +1,13 @@
 import { useState } from "react";
-import NavBar from "./Components/NavBar";
-import Home from "./Components/Home";
-import SocialLinks from "./Components/SocialLinks";
-import About from "./Components/About";
-import Portfolio from "./Components/Portfolio";
-import Testimonials from "./Components/Testimonials";
-import Experiences from "./Components/Experiences";
-import Contact from "./Components/contact";
-import Footer from "./Components/Footer";
+import NavBar from "./Components/NavBar.jsx";
+import Home from "./Components/Home.jsx";
+import SocialLinks from "./Components/SocialLinks.jsx";
+import About from "./Components/About.jsx";
+import Portfolio from "./Components/Portfolio.jsx";
+import Testimonials from "./Components/Testimonials.jsx";
+import Experiences from "./Components/Experiences.jsx";
+import Contact from "./Components/contact.jsx";
+import Footer from "./Components/Footer.jsx";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
