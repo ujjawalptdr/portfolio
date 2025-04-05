@@ -6,7 +6,7 @@ import About from "./Components/About.jsx";
 import Portfolio from "./Components/Portfolio.jsx";
 import Testimonials from "./Components/Testimonials.jsx";
 import Experiences from "./Components/Experiences.jsx";
-import Contact from "./Components/contact.jsx";
+import Contact from "./Components/Contact.jsx";
 import Footer from "./Components/Footer.jsx";
 
 function App() {
