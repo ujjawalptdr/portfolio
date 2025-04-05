@@ -23,7 +23,7 @@ const SocialLinks2 = ({ additionalStyle }) => {
     },
     {
       id: 4,
-      link: "/Ujjawal's resume.pdf",
+      link: "/portfolio/Ujjawal%27s%20Resume.pdf",
       icon: <TbFileCv />,
       download: true,
     },

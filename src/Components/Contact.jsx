@@ -45,6 +45,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", delay: 0.2, duration: 0.6 }}
             viewport={{ once: true }}
+            className="w-2/3"
           >
             <SocialLinks2 additionalStyle="" />
           </motion.div>
