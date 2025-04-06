@@ -18,7 +18,7 @@ const SocialLinks2 = ({ additionalStyle }) => {
     },
     {
       id: 3,
-      link: "mailto:foo@gmail.com",
+      link: "mailto:ujjawalpatidar0303@gmail.com",
       icon: <HiOutlineMail size={30} />,
     },
     {
