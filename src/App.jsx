@@ -13,7 +13,7 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className={darkMode ? "dark" : undefined}>
+    <div className={`${darkMode ? "dark" : undefined} overflow-x-hidden`}> {/*the overflow-x-hiddden prevents any child to overflow in horozontal axis, which cause a white line at the right side*/}
       <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
       <main className="text-gray-900 bg-white dark:bg-gray-900 dark:text-white">
         <Home />

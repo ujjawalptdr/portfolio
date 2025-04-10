@@ -74,10 +74,10 @@ function NavBar({ darkMode, setDarkMode }) {
 
       {nav && (
         <motion.ul
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.3 }}
-          className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b bg-white dark:from-black dark:to-gray-800 text-gray-500"
+          transition={{ duration: 0.2 }}
+          className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen dark:bg-gradient-to-b bg-white dark:from-black dark:to-gray-800 text-gray-500"
         >
           {links.map(({ id, link }) => (
             <li
