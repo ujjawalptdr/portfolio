@@ -6,56 +6,51 @@ import { motion } from "framer-motion";
 import linkzap from "../assets/linkzap.png";
 import foodyZone from "../assets/foodyZone.png";
 import luckyDual from "../assets/luckyDual.png"
+import quickAssist from "../assets/QuickAssistImg.png"
+import hireVerse from "../assets/HireVerseImg.png"
 // import p2 from "../assets/p2.jpg";
-import p3 from "../assets/p3.jpg";
-import p4 from "../assets/p4.jpg";
-import p5 from "../assets/p5.jpg";
-import p6 from "../assets/p6.jpg";
+// import p3 from "../assets/p3.jpg";
+// import p4 from "../assets/p4.jpg";
+// import p5 from "../assets/p5.jpg";
+// import p6 from "../assets/p6.jpg";
 
 const Portfolio = () => {
   const projects = [
     {
       id: 1,
+      image: quickAssist,
+      title: "QuickAssist",
+      github: "https://github.com/ujjawalptdr/QuickAssist",
+      demo: "https://quick-assist.onrender.com/",
+    },
+    {
+      id: 2,
+      image: hireVerse,
+      title: "LinkZap",
+      github: "https://github.com/ujjawalptdr/HireVerse",
+      demo: "https://hireverse.onrender.com/",
+    },
+    {
+      id: 3,
       image: linkzap,
       title: "LinkZap",
       github: "https://github.com/ujjawalptdr/Link-Zap",
       demo: "https://link-zap.onrender.com/",
     },
     {
-      id: 2,
+      id: 4,
       image: foodyZone,
       title: "Foody Zone",
       github: "https://github.com/ujjawalptdr/Foody-Zone",
       demo: "https://ujjawalptdr.github.io/Foody-Zone/",
     },
     {
-      id: 3,
+      id: 5,
       image: luckyDual,
       title: "Lucky Dual",
       github: "https://github.com/ujjawalptdr/Lucky-Dual",
       demo: "https://ujjawalptdr.github.io/Lucky-Dual/",
     },
-    // {
-    //   id: 4,
-    //   image: p4,
-    //   title: "Best App",
-    //   github: "https://github.com",
-    //   demo: "https://google.com",
-    // },
-    // {
-    //   id: 5,
-    //   image: p5,
-    //   title: "Best App",
-    //   github: "https://github.com",
-    //   demo: "https://google.com",
-    // },
-    // {
-    //   id: 6,
-    //   image: p6,
-    //   title: "Best App",
-    //   github: "https://github.com",
-    //   demo: "https://google.com",
-    // },
   ];
 
   const fadeUp = {
@@ -80,7 +75,7 @@ const Portfolio = () => {
               variants={fadeUp}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.2 }}
+              viewport={{ once: false, amount: 0.2 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
               <img

@@ -13,63 +13,71 @@ import tailwind from "../assets/tailwind.png";
 import express from "../assets/express.png";
 import cplusplus from "../assets/C++.png";
 import java from "../assets/java.webp";
+import mongoDb from "../assets/MongoDB.png"
 
 const Experiences = () => {
   const techs = [
     {
       id: 1,
-      src: html,
-      title: "HTML",
-      style: "shadow-orange-500",
-    },
-    {
-      id: 2,
-      src: css,
-      title: "CSS",
-      style: "shadow-blue-500",
-    },
-    {
-      id: 3,
-      src: javascript,
-      title: "Javascript",
-      style: "shadow-yellow-500",
-    },
-    {
-      id: 4,
-      src: reactImage,
-      title: "React",
-      style: "shadow-blue-600",
-    },
-    {
-      id: 5,
-      src: tailwind,
-      title: "Tailwind",
-      style: "shadow-sky-400",
-    },
-    {
-      id: 6,
-      src: node,
-      title: "Node JS",
-      style: "shadow-green-400",
-    },
-    {
-      id: 7,
-      src: express,
-      title: "Express JS",
-      style: "shadow-gray-400",
-    },
-    {
-      id: 8,
       src: cplusplus,
       title: "C++",
       style: "shadow-blue-400",
     },
     {
-      id: 9,
+      id: 2,
       src: java,
       title: "Java",
       style: "shadow-blue-600",
     },
+    {
+      id: 3,
+      src: html,
+      title: "HTML",
+      style: "shadow-orange-500",
+    },
+    {
+      id: 4,
+      src: css,
+      title: "CSS",
+      style: "shadow-blue-500",
+    },
+    {
+      id: 5,
+      src: javascript,
+      title: "Javascript",
+      style: "shadow-yellow-500",
+    },
+    {
+      id: 6,
+      src: reactImage,
+      title: "React",
+      style: "shadow-blue-600",
+    },
+    {
+      id: 7,
+      src: tailwind,
+      title: "Tailwind",
+      style: "shadow-sky-400",
+    },
+    {
+      id: 8,
+      src: node,
+      title: "Node JS",
+      style: "shadow-green-400",
+    },
+    {
+      id: 9,
+      src: express,
+      title: "Express JS",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 10,
+      src: mongoDb,
+      title: "MongoDB",
+      style: "shadow-green-400",
+    },
+
     // {
     //   id: 8,
     //   src: nextjs,
@@ -83,11 +91,12 @@ const Experiences = () => {
     //   style: "shadow-pink-400",
     // },
     {
-      id: 10,
+      id: 11,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
     },
+
   ];
   return (
     <div
@@ -106,7 +115,7 @@ const Experiences = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: id * 0.05 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
             >
               <img src={src} alt={title} className="w-20" />
               <p className="mt-4 text-center text-sm sm:text-base">{title}</p>

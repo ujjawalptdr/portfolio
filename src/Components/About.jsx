@@ -32,7 +32,7 @@ const About = () => {
           variants={containerVariant}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="text-base sm:text-lg md:text-xl lg:text-xl leading-relaxed space-y-8 max-w-4xl"
         >
           <motion.p variants={itemVariant}>
