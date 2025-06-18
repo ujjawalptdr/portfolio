@@ -9,6 +9,7 @@ import Experiences from "./Components/Experiences.jsx";
 import Contact from "./Components/Contact.jsx";
 import Footer from "./Components/Footer.jsx";
 
+
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -26,7 +27,8 @@ function App() {
       </main>
 
       <SocialLinks />
-    </div>
+
+    </div >
   );
 }
 

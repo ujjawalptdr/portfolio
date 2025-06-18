@@ -28,14 +28,14 @@ function NavBar({ darkMode, setDarkMode }) {
         animate={{ scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        Ujjawal
+        <a href="/">Ujjawal</a>
       </motion.h1>
 
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
           <motion.li
             key={id}
-            className="text-black dark:text-gray-500 px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-gray-950 dark:hover:text-gray-400 duration-200"
+            className="text-black dark:text-gray-500 px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-green-500 dark:hover:text-green-500 duration-200"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.4, delay: id * 0.1 }}

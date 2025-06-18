@@ -12,7 +12,7 @@
 }
 
 
-Text selection color
+/* Text selection color */
 ::selection {
   background-color: #20c546; /* green */
   color: white;
