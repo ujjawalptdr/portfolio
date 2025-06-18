@@ -67,16 +67,15 @@ const Portfolio = () => {
         title="PortFolio 🗒️"
         subtitle="Check out my portfolio to see the projects I’ve worked on. I’m always open to new challenges and opportunities."
       >
-        <div className="grid gap-8 lg:gap-20 lg:grid-cols-2">
+        <div className="grid gap-16 lg:gap-20 lg:grid-cols-2 mt-4">
           {projects.map(({ id, image, title, github, demo, description }) => (
             <motion.div
               key={id}
-              initial={{ opacity: 0, y: 40, scale: 0.95 }}
+              initial={{ opacity: 0, y: 20, scale: 0.95 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: false, amount: 0.6 }}
+              viewport={{ once: true, amount: 0.6 }}
               transition={{
-                duration: 0.6,
-                ease: [0.17, 0.67, 0.83, 0.67], // Smooth spring-like ease
+                duration: 0.9, type: "spring"
               }}
             >
               {/* Card Box */}
@@ -114,7 +113,7 @@ const Portfolio = () => {
 
               {/* Description Section (Outside Card) */}
               <div className="max-w-lg w-full mt-5 px-3">
-                <p className="text-sm text-gray-700 dark:text-gray-300 text-center leading-relaxed break-words">
+                <p className="text-xs text-gray-700 dark:text-gray-300 text-center leading-relaxed break-words">
                   <span className="font-bold text-black dark:text-green-500 text-base">{title}</span> – {description}
                 </p>
               </div>
