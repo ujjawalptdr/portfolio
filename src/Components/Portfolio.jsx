@@ -67,7 +67,7 @@ const Portfolio = () => {
         title="PortFolio 🗒️"
         subtitle="Check out my portfolio to see the projects I’ve worked on. I’m always open to new challenges and opportunities."
       >
-        <div className="grid gap-16 lg:gap-20 lg:grid-cols-2 mt-4">
+        <div className="grid gap-20  md:grid-cols-2 mt-4">
           {projects.map(({ id, image, title, github, demo, description }) => (
             <motion.div
               key={id}
@@ -93,7 +93,7 @@ const Portfolio = () => {
                     </h2>
                     <a
                       href={github}
-                      className="text-2xl hover:scale-110 transition text-gray-700 dark:text-white"
+                      className="text-2xl hover:scale-110 transition text-gray-900 dark:text-white"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -101,7 +101,7 @@ const Portfolio = () => {
                     </a>
                     <a
                       href={demo}
-                      className="text-2xl hover:scale-105 transition text-gray-700 dark:text-white"
+                      className="text-2xl hover:scale-105 transition text-gray-900 dark:text-white"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -113,7 +113,7 @@ const Portfolio = () => {
 
               {/* Description Section (Outside Card) */}
               <div className="max-w-lg w-full mt-5 px-3">
-                <p className="text-xs text-gray-700 dark:text-gray-300 text-center leading-relaxed break-words">
+                <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-300 text-center leading-relaxed break-words">
                   <span className="font-bold text-black dark:text-green-500 text-base">{title}</span> – {description}
                 </p>
               </div>
