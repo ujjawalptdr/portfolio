@@ -28,7 +28,7 @@ function NavBar({ darkMode, setDarkMode }) {
         animate={{ scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <a href="/">Ujjawal</a>
+        <a href="./">Ujjawal</a>
       </motion.h1>
 
       <ul className="hidden md:flex">
