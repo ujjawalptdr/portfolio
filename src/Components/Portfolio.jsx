@@ -8,11 +8,6 @@ import foodyZone from "../assets/foodyZone.png";
 import luckyDual from "../assets/luckyDual.png"
 import quickAssist from "../assets/QuickAssistImg.png"
 import hireVerse from "../assets/HireVerseImg.png"
-// import p2 from "../assets/p2.jpg";
-// import p3 from "../assets/p3.jpg";
-// import p4 from "../assets/p4.jpg";
-// import p5 from "../assets/p5.jpg";
-// import p6 from "../assets/p6.jpg";
 
 const Portfolio = () => {
   const projects = [

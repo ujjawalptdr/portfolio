@@ -1,32 +1,32 @@
 import React from "react";
 import Section from "./CommomComp/Section";
-import avatar from "../assets/avatar.png";
+// import avatar from "../assets/avatar.png";
 // import { motion } from "framer-motion";
 
 const Testimonials = () => {
-  const testmonialsArray = [
-    {
-      id: 1,
-      image: avatar,
-      name: "Jhon Doe",
-      comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum nisi dolorem aliquid aspernatur atque ",
-    },
-    {
-      id: 2,
-      image: avatar,
-      name: "Jhon Doe",
-      comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum nisi dolorem aliquid aspernatur atque ",
-    },
-    {
-      id: 3,
-      image: avatar,
-      name: "Jhon Doe",
-      comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum nisi dolorem aliquid aspernatur atque ",
-    },
-  ];
+  // const testmonialsArray = [
+  //   {
+  //     id: 1,
+  //     image: avatar,
+  //     name: "Jhon Doe",
+  //     comment:
+  //       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum nisi dolorem aliquid aspernatur atque ",
+  //   },
+  //   {
+  //     id: 2,
+  //     image: avatar,
+  //     name: "Jhon Doe",
+  //     comment:
+  //       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum nisi dolorem aliquid aspernatur atque ",
+  //   },
+  //   {
+  //     id: 3,
+  //     image: avatar,
+  //     name: "Jhon Doe",
+  //     comment:
+  //       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum nisi dolorem aliquid aspernatur atque ",
+  //   },
+  // ];
 
   return (
     <div

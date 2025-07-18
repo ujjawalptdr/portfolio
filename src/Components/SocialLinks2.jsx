@@ -1,5 +1,4 @@
 import React from "react";
-// import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { TbFileCv } from "react-icons/tb";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
