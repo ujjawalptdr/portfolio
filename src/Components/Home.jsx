@@ -1,6 +1,7 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import heroImage from "../assets/heroImage2.jpeg";
+// import heroImage from "../assets/heroImage2.jpeg";
+import heroImage from "../assets/heroImage3.jpg";
 import SocialLinks2 from "./SocialLinks2";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
@@ -42,7 +43,8 @@ const Home = () => {
                 to="portfolio"
                 smooth
                 duration={500}
-                className="group text-white w-fit px-6 py-3 mt-4 flex items-center gap-2 rounded-md bg-gradient-to-r from-green-500 to-gray-800 cursor-pointer hover:shadow-lg"
+                className="group text-white w-fit h-11 px-6 py-3 mt-4 flex items-center gap-2 rounded-md bg-gradient-to-r from-green-500 to-gray-800 cursor-pointer
+                             hover:shadow-lg transition-transform hover:-translate-y-0.5 font-medium"
               >
                 Portfolio
                 <span
@@ -66,7 +68,7 @@ const Home = () => {
             <img
               src={heroImage}
               alt="my profile"
-              className="rounded-md w-3/4 sm:w-2/3 md:w-full max-w-xs md:max-w-sm lg:max-w-md"
+              className="rounded-xl w-3/4 sm:w-2/3 md:w-full max-w-xs md:max-w-sm lg:max-w-md"
             />
           </motion.div>
         </div>
