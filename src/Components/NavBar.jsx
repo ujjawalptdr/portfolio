@@ -102,26 +102,26 @@ function NavBar({ darkMode, setDarkMode }) {
           </div>
         </div>
 
-        {nav && (
-          <motion.ul
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.2 }}
-            className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen dark:bg-gradient-to-b bg-white dark:from-black dark:to-gray-800 text-gray-500"
-          >
-            {links.map(({ id, link }) => (
-              <li
-                key={id}
-                className="text-gray-900 hover:text-slate-400 dark:text-slate-500 dark:hover:text-slate-200 px-4 cursor-pointer capitalize text-4xl py-6 hover:scale-105 duration-200"
-              >
-                <Link onClick={() => setNav(!nav)} to={link} smooth duration={500}>
-                  {link}
-                </Link>
-              </li>
-            ))}
-          </motion.ul>
-        )}
       </motion.div>
+      {nav && (
+        <motion.ul
+          initial={{ opacity: 0, scale: 0.98 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.2 }}
+          className="flex flex-col justify-center items-center fixed z-40 inset-0 top-0 left-0 w-full h-screen dark:bg-gradient-to-b bg-white dark:from-slate-800 dark:to-slate-950 text-slate-950 mt-0 "
+        >
+          {links.map(({ id, link }) => (
+            <li
+              key={id}
+              className="text-gray-900 hover:text-slate-400 dark:text-slate-400 dark:hover:text-slate-200 px-4 cursor-pointer capitalize text-4xl py-6 hover:scale-105 duration-200 will-change-transform"
+            >
+              <Link onClick={() => setNav(!nav)} to={link} smooth duration={500}>
+                {link}
+              </Link>
+            </li>
+          ))}
+        </motion.ul>
+      )}
     </div>
   );
 }
