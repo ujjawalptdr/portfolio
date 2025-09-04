@@ -1,5 +1,6 @@
 import React from "react";
 import Section from "./CommomComp/Section";
+import Contact from "./Contact.jsx";
 import { motion } from "framer-motion";
 import html from "../assets/html.png";
 import javascript from "../assets/javascript.png";
@@ -99,30 +100,35 @@ const Experiences = () => {
 
   ];
   return (
-    <div
-      name="experience"
-      className="flex justify-center items-center bg-gradient-to-b dark:from-black dark:to-gray-800 "
-    >
-      <Section
-        title="Experiences"
-        subtitle="These are some technologies I've worked with."
+    <div className="bg-white dark:bg-gradient-to-b dark:from-slate-800 dark:via-slate-900 dark:to-slate-950">
+      <div
+        name="experience"
+        className="flex justify-center items-center  "
       >
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-4 sm:py-8 sm:px-12">
-          {techs.map(({ id, src, title, style }) => (
-            <motion.div
-              key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 px-12 lg:px-24 rounded-lg ${style}`}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: id * 0.05 }}
-              viewport={{ once: false }}
-            >
-              <img src={src} alt={title} className="w-20" />
-              <p className="mt-4 text-center text-sm sm:text-base">{title}</p>
-            </motion.div>
-          ))}
-        </div>
-      </Section>
+        <Section
+          title="Experiences"
+          subtitle="These are some technologies I've worked with."
+        >
+          <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-4 sm:py-8 sm:px-12">
+            {techs.map(({ id, src, title, style }) => (
+              <motion.div
+                key={id}
+                className={`shadow-md hover:scale-105 duration-500 py-2 px-12 lg:px-24 rounded-lg ${style}`}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: id * 0.05 }}
+                viewport={{ once: false }}
+              >
+                <img src={src} alt={title} className="w-20" />
+                <p className="mt-4 text-center text-sm sm:text-base">{title}</p>
+              </motion.div>
+            ))}
+          </div>
+        </Section>
+
+
+      </div>
+      <Contact />
     </div>
   );
 };

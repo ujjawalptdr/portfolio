@@ -58,14 +58,14 @@ const SocialLinks = () => {
             transition={{ duration: 0.4, delay: id * 0.1 }}
             viewport={{ once: true }}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 bg-gray-500 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-200" +
+              "flex justify-between items-center w-40 h-14 px-4 bg-slate-200 dark:bg-white/10 backdrop-blur-md dark:text-slate-400 ml-[-100px] hover:ml-[-10px] hover:rounded-md dark:hover:bg-white/20 duration-300" +
               " " +
               style
             }
           >
             <a
               href={href}
-              className="flex justify-between items-center w-full text-white"
+              className="flex justify-between items-center w-full text-slate-950/90 dark:text-slate-100"
               download={download}
               target="_blank"
               rel="noreferrer"

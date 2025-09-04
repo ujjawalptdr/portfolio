@@ -56,7 +56,7 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="min-h-screen bg-gradient-to-b from-white dark:from-black dark:to-gray-800 flex justify-center items-center"
+      className="flex justify-center items-center"
     >
       <Section
         title="PortFolio 🗒️"
@@ -66,15 +66,15 @@ const Portfolio = () => {
           {projects.map(({ id, image, title, github, demo, description }) => (
             <motion.div
               key={id}
-              initial={{ opacity: 0, y: 20, scale: 0.95 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.6 }}
               transition={{
-                duration: 0.9, type: "spring"
+                duration: 0.9, type: "easeInOut",
               }}
             >
               {/* Card Box */}
-              <div className="max-w-lg w-full flex flex-col items-center shadow-md hover:shadow-lg shadow-gray-300 hover:shadow-gray-400 dark:shadow-gray-600 duration-300 rounded-2xl overflow-hidden  hover:scale-[1.015] bg-white dark:bg-gray-900">
+              <div className="max-w-lg w-full flex flex-col items-center shadow-md hover:shadow-lg shadow-gray-300 hover:shadow-gray-400 dark:shadow-gray-600 duration-300 rounded-2xl overflow-hidden  hover:scale-[1.015] bg-white dark:bg-gray-900 will-change-transform">
                 <div className="flex h-48 w-full">
                   <img
                     src={image}

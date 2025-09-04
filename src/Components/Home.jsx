@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="min-h-screen w-full bg-gradient-to-b dark:from-black dark:via-black dark:to-gray-800 flex items-center px-4 sm:px-8 lg:px-16 "
+      className="min-h-screen w-full bg-white dark:bg-gradient-to-b dark:from-slate-950 dark:via-slate-900 dark:to-slate-800 flex items-center px-4 sm:px-8 lg:px-16 "
     >
       <div className="w-full my-20">
         <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center md:flex-row md:items-center gap-8 md:gap-16">
@@ -34,7 +34,7 @@ const Home = () => {
               >
                 👋
               </motion.span>
-              , I'm a Full Stack Developer with a passion for crafting seamless and engaging digital experiences. I specialize in building responsive, dynamic, and user-friendly applications that bring ideas to life. Always driven by innovation and creativity, I aim to develop solutions that not only meet but exceed user expectations.
+              , I have a passion for crafting seamless and engaging digital experiences. I specialize in building responsive, dynamic, and user-friendly applications that bring ideas to life. Driven by innovation and creativity, I strive to deliver solutions that not only meet but exceed user expectations.
             </p>
 
             {/* Button Section */}

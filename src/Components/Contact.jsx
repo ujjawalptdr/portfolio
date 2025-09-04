@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="flex justify-center items-center bg-gradient-to-b dark:from-gray-800 dark:to-black"
+      className="flex justify-center items-center"
     >
       <Section
         title="Contact 📞"
