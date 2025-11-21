@@ -1,10 +1,12 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 // import heroImage from "../assets/heroImage2.jpeg";
-import heroImage from "../assets/heroImage3.jpg";
+// import heroImage from "../assets/heroImage3.jpg";
 import SocialLinks2 from "./SocialLinks2";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
+
+const heroImage = "https://res.cloudinary.com/dmdvswkat/image/upload/v1763743565/heroImage3_wlukcp.jpg";
 
 const Home = () => {
   return (
